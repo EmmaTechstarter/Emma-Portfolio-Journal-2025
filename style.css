@@ -1,0 +1,26 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: rgb(255, 244, 172);
+}
+
+.links-navbar {
+    background-color:black;
+    padding: 15px;
+    text-align: center;
+}
+.links-navbar a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+.links-navbar a:hover {
+    background-color: white;
+    color: black;
+}
