@@ -1,3 +1,3 @@
-# Portfolio + Jornal
+# Portfolio + Journal
 
-Gemacht und designt von Emma
+Designt und programmiert von Emma
