@@ -1,26 +1,119 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    display: flex;
     background-color: rgb(255, 244, 172);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
 }
 
 .links-navbar {
-    background-color:black;
-    padding: 15px;
-    text-align: center;
+    display: flex;
 }
+
 .links-navbar a {
-    color: white;
+    color: black;
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
-    margin: 5px;
-    display: inline-block;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
 }
+
 .links-navbar a:hover {
     background-color: white;
     color: black;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #004d99;
+    color: white;
+    margin-top: 80px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: white;
+    color: #004d99;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #003366;
+    color: white;
+}
+
+.about {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.scrolled {
+    background-color: #333 !important;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
 }
