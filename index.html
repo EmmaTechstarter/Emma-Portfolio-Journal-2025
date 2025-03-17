@@ -31,13 +31,32 @@
 
         <section class="about fade-in" id="about">
             <h2>Über mich</h2>
-            <p>Ich bin Emma, 25 Jahre alt und bin ausgelernte Mediengestalterin im Bereich Printmedien.<br>
-            Zurzeit befinde ich mich in einer Weiterbildung zu Netzwerktechniken, Programmierung und Webdesign.<br>
-            Möchtest du mehr erfahren? Scroll durch meine Seiten.</p>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Ich bin Emma, 25 Jahre alt und bin ausgelernte Mediengestalterin im Bereich Printmedien.<br>
+                    Zurzeit befinde ich mich in einer Weiterbildung zu Netzwerktechniken, Programmierung und Webdesign.<br>
+                    Möchtest du mehr erfahren? Scroll durch meine Seiten.</p>
+                </div>
+
+                <div class="slider">
+                    <div class="slides">
+                        <img src="/img/bild 1.png" alt="Bild 1">
+                        <img src="/img/bild 2.png" alt="Bild 2">
+                        <img src="/img/bild 3.png" alt="Bild 3">
+                    </div>
+                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </div>
         </section>
 
         <section class="journal fade-in" id="journal">
             <h2>Journal</h2>
+            <div class="journal-entry">
+                <h3>Hausaufgabe mit CSS</h3>
+                <p>Ich habe meine Seite mit einem Slider und weiteren kleinen Anpassungen verbessert (oder gehofft)...</p>
+                <span class="date">17. März 2025</span>
+            </div>
             <div class="journal-entry">
                 <h3>Mein erstes Webprojekt</h3>
                 <p>Ich habe meine Seite etwas erweitert mit einem Kontaktformular und ersten Einträgen...</p>

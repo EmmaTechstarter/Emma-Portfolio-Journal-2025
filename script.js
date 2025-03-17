@@ -35,6 +35,21 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", checkFadeIn);
     checkFadeIn();
 
+    let slideIndex = 0;
+    const slides = document.querySelector(".slides");
+    const totalSlides = document.querySelectorAll(".slides img").length;
+
+    function changeSlide(direction) {
+        slideIndex += direction;
+
+        if (slideIndex >= totalSlides) slideIndex = 0;
+        if (slideIndex < 0) slideIndex = totalSlides - 1;
+
+        slides.style.transform = `translateX(${-slideIndex * 300}px)`;
+    }
+
+    setInterval(() => changeSlide(1), 4000);
+
     document.getElementById("contact-form").addEventListener("submit", function (e) {
         e.preventDefault();
         document.getElementById("form-message").textContent = "Danke für deine Nachricht!";
