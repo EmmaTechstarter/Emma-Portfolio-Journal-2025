@@ -15,8 +15,8 @@
                 <div class="links-navbar">
                     <a href="#home" class="nav-link">Home</a>
                     <a href="#about" class="nav-link">Über mich</a>
+                    <a href="#journal" class="nav-link">Journal</a>
                     <a href="#kontakt" class="nav-link">Kontakt</a>
-                    <a href="#impressum" class="nav-link">Impressum</a>
                 </div>
             </nav>
         </div>
@@ -32,12 +32,45 @@
         <section class="about fade-in" id="about">
             <h2>Über mich</h2>
             <p>Ich bin Emma, 25 Jahre alt und bin ausgelernte Mediengestalterin im Bereich Printmedien.<br>
-            Zur Zeit verbringe ich meine Zeit in einer Weiterbildung, in der ich Netzwerktechniken, Programmierung und erweitertes Webdesign aneigne.<br>
-            Möchtest du mehr über mich erfahren, scroll durch und lerne meine verschiedenen Seiten kennen.</p>
+            Zurzeit befinde ich mich in einer Weiterbildung zu Netzwerktechniken, Programmierung und Webdesign.<br>
+            Möchtest du mehr erfahren? Scroll durch meine Seiten.</p>
+        </section>
+
+        <section class="journal fade-in" id="journal">
+            <h2>Journal</h2>
+            <div class="journal-entry">
+                <h3>Mein erstes Webprojekt</h3>
+                <p>Ich habe meine Seite etwas erweitert mit einem Kontaktformular und ersten Einträgen...</p>
+                <span class="date">14. März 2025</span>
+            </div>
+
+            <div class="journal-entry">
+                <h3>Erste Erfahrungen mit JavaScript</h3>
+                <p>Heute habe ich mit JavaScript experimentiert und in meine Seite programmiert...</p>
+                <span class="date">13. März 2025</span>
+            </div>
+        </section>
+
+        <section class="kontakt fade-in" id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Schreib mir eine Nachricht:</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Senden</button>
+            </form>
+            <p id="form-message"></p>
         </section>
     </main>
 
-    <footer id="kontakt">
+    <footer>
         <p>&copy; 2025 Emma C. S. Feck | Alle Rechte vorbehalten</p>
     </footer>
 

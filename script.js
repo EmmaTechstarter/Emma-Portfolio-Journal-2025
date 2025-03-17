@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     changeGreeting();
-    setInterval(changeGreeting, 3000); 
+    setInterval(changeGreeting, 3000);
 
     const header = document.getElementById("header");
     window.addEventListener("scroll", function () {
@@ -34,4 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", checkFadeIn);
     checkFadeIn();
+
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        document.getElementById("form-message").textContent = "Danke für deine Nachricht!";
+        this.reset();
+    });
 });
